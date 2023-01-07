@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Caveat", cursive;
+  background-color: rgba(29, 53, 92, 0.923);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+}
+.container .card {
+  width: 25vw;
+  margin: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px 0 0 30px;
+  transition: all 0.5s;
+  position: relative;
+  flex: 1;
+  border-right: 3px solid #ccc;
+  cursor: pointer;
+  filter: grayscale(0.6);
+}
+.container .card h3 {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  text-align: end;
+  font-size: 72px;
+  color: rgba(52, 83, 142, 0.923);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 50px 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.container .card.active {
+  flex: 8;
+  filter: grayscale(0);
+}
+.container .card.active h3 {
+  opacity: 0.75;
+}/*# sourceMappingURL=style.css.map */
